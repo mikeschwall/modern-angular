@@ -8,4 +8,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'modern-angular';
+
+  final(test:boolean) {
+    console.log("test2",test)
+
+
+  }
+
 }

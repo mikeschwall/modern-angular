@@ -7,6 +7,9 @@ import { InitComponent } from './init/init.component';
 import { OneComponent } from './one/one.component';
 import { TwoComponent } from './two/two.component';
 import { ThreeComponent } from './three/three.component';
+import { HttpClientModule } from '@angular/common/http';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { CoursePipe } from './course.pipe';
 
 
 @NgModule({
@@ -15,11 +18,21 @@ import { ThreeComponent } from './three/three.component';
     InitComponent,
     OneComponent,
     TwoComponent,
-    ThreeComponent
+    ThreeComponent,
+    CoursePipe
   ],
   imports: [
     CommonModule,
-    TodoRoutingModule
+    TodoRoutingModule,
+    HttpClientModule,
+    FormsModule,
+    ReactiveFormsModule
+  ],
+  exports:[
+    InitComponent,
+    OneComponent,
+    TwoComponent,
+    ThreeComponent
   ]
 })
 export class TodoModule { }
