@@ -3,7 +3,6 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { TodoModule } from './todo/todo.module';
 
 @NgModule({
   declarations: [
@@ -11,7 +10,6 @@ import { TodoModule } from './todo/todo.module';
   ],
   imports: [
     BrowserModule,
-    TodoModule,
     AppRoutingModule
   ],
   providers: [],
