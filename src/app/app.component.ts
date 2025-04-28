@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { CourseService } from './todo/course.service';
 
 @Component({
   selector: 'app-root',
@@ -8,9 +7,10 @@ import { CourseService } from './todo/course.service';
   styleUrl: './app.component.css'
 })
 export class AppComponent implements OnInit {
-  mydata:any;
 
-  constructor(private courseService:CourseService) {
+  title="hello"
+
+  constructor() {
 
   }
 
@@ -18,12 +18,5 @@ export class AppComponent implements OnInit {
     
   }
 
-  getdata(id:number) {
-    this.courseService.getperson(id).subscribe(item => this.mydata = item);
-  }
-
-  final(test:any) {
-    console.log(test);
-  }
 
 }
